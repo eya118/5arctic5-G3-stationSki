@@ -40,5 +40,6 @@ public class SkieurController {
     @PostMapping ("/addSkierAndAssignToCourse/{numCourse}")
     public Skieur addSkierAndAssignToCourse(@RequestBody Skieur skieur, @PathVariable ("numCourse") Long numCourse) {
         return iskieurService.addSkierAndAssignToCourse(skieur, numCourse);
+        //eyacomment
     }
 }
